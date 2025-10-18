@@ -5,9 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  server: {
+  server : {
     host: true, 
+    port: 5173,
     allowedHosts: ['frontend.blogify.run.place'], 
-    port: 5173
-  }
+  },
 })
